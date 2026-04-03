@@ -4,13 +4,13 @@ import { LogoBar } from "./_components/landing/logo-bar";
 import { Pricing } from "./_components/landing/pricing";
 import { Testimonial } from "./_components/landing/testimonial";
 import { Deliverables } from "./_components/landing/deliverables";
-import { Insights } from "./_components/landing/insights";
 import { Problem } from "./_components/landing/problem";
 import { Process } from "./_components/landing/process";
 import { ScopeTabs } from "./_components/landing/scope-tabs";
 import { CaseStudies } from "./_components/landing/case-studies";
 import { Faq } from "./_components/landing/faq";
 import { TeamComposition } from "./_components/landing/team-composition";
+import { Results } from "./_components/landing/results";
 import { CtaSection } from "./_components/landing/cta-section";
 import { Footer } from "./_components/landing/footer";
 
@@ -31,8 +31,6 @@ export default function Home() {
       </section>
 
       <Pricing />
-      <Testimonial />
-      <Insights />
       <Deliverables />
 
       <section className="bg-white">
@@ -45,6 +43,8 @@ export default function Home() {
       <Faq />
       <TeamComposition />
       <CtaSection />
+      <Testimonial />
+      <Results />
       <Footer />
     </>
   );
