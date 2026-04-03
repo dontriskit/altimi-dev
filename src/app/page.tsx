@@ -4,6 +4,7 @@ import { LogoBar } from "./_components/landing/logo-bar";
 import { Pricing } from "./_components/landing/pricing";
 import { Testimonial } from "./_components/landing/testimonial";
 import { Deliverables } from "./_components/landing/deliverables";
+import { Insights } from "./_components/landing/insights";
 import { Problem } from "./_components/landing/problem";
 import { Process } from "./_components/landing/process";
 import { ScopeTabs } from "./_components/landing/scope-tabs";
@@ -31,6 +32,7 @@ export default function Home() {
 
       <Pricing />
       <Testimonial />
+      <Insights />
       <Deliverables />
 
       <section className="bg-white">

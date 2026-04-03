@@ -29,7 +29,7 @@ export async function GET(
     return new NextResponse(obj.body, {
       headers: {
         "Content-Type": obj.httpMetadata?.contentType || "image/jpeg",
-        "Cache-Control": "public, max-age=86400, immutable",
+        "Cache-Control": "public, max-age=300",
       },
     });
   } catch {
