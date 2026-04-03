@@ -12,6 +12,7 @@ import { Faq } from "./_components/landing/faq";
 import { TeamComposition } from "./_components/landing/team-composition";
 import { Results } from "./_components/landing/results";
 import { CtaSection } from "./_components/landing/cta-section";
+import { Insights } from "./_components/landing/insights";
 import { Footer } from "./_components/landing/footer";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
       </section>
 
       <Pricing />
+      <Testimonial />
       <Deliverables />
 
       <section className="bg-white">
@@ -43,8 +45,8 @@ export default function Home() {
       <Faq />
       <TeamComposition />
       <CtaSection />
-      <Testimonial />
       <Results />
+      <Insights />
       <Footer />
     </>
   );

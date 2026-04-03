@@ -18,11 +18,11 @@ async function getArticleHtml(slug: string): Promise<string | null> {
 
     // Extract content between <main> and </main> (the article body)
     const mainMatch = fullHtml.match(/<main[^>]*>([\s\S]*?)<\/main>/i);
-    if (mainMatch) return mainMatch[1];
+    if (mainMatch?.[1]) return mainMatch[1];
 
     // Fallback: extract between <body> and </body>
     const bodyMatch = fullHtml.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
-    if (bodyMatch) return bodyMatch[1];
+    if (bodyMatch?.[1]) return bodyMatch[1];
 
     return fullHtml;
   } catch {
