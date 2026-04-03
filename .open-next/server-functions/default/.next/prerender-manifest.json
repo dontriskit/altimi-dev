@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/resources/soc-reports/full-report": {
+    "/intake": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/resources/soc-reports/full-report",
-      "dataRoute": "/resources/soc-reports/full-report.rsc",
+      "srcRoute": "/intake",
+      "dataRoute": "/intake.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -49,8 +49,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/_not-found": {
-      "initialStatus": 404,
+    "/resources/soc-reports/full-report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -63,32 +62,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/_not-found",
-      "dataRoute": "/_not-found.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/resources": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/resources",
-      "dataRoute": "/resources.rsc",
+      "srcRoute": "/resources/soc-reports/full-report",
+      "dataRoute": "/resources/soc-reports/full-report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -122,7 +97,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/intake": {
+    "/resources": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -135,8 +110,33 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/intake",
-      "dataRoute": "/intake.rsc",
+      "srcRoute": "/resources",
+      "dataRoute": "/resources.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/_not-found": {
+      "initialStatus": 404,
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",

@@ -4,10 +4,10 @@
   "/api/leads/route": "/api/leads",
   "/api/trpc/[trpc]/route": "/api/trpc/[trpc]",
   "/api/auth/[...all]/route": "/api/auth/[...all]",
-  "/intake/page": "/intake",
   "/page": "/",
+  "/intake/page": "/intake",
   "/resources/soc-reports/page": "/resources/soc-reports",
-  "/resources/page": "/resources",
   "/resources/soc-reports/full-report/page": "/resources/soc-reports/full-report",
+  "/resources/page": "/resources",
   "/privacy/page": "/privacy"
 }
