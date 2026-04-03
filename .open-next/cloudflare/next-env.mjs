@@ -1,3 +1,0 @@
-export const production = {"BETTER_AUTH_SECRET":"4ksLDrXEbWqoYSgiKifaR0tlNa9Jk9IDs9WN4vo6Yfg=","BETTER_AUTH_GITHUB_CLIENT_ID":"","BETTER_AUTH_GITHUB_CLIENT_SECRET":"","DATABASE_URL":"file:./db.sqlite"};
-export const development = {"BETTER_AUTH_SECRET":"4ksLDrXEbWqoYSgiKifaR0tlNa9Jk9IDs9WN4vo6Yfg=","BETTER_AUTH_GITHUB_CLIENT_ID":"","BETTER_AUTH_GITHUB_CLIENT_SECRET":"","DATABASE_URL":"file:./db.sqlite"};
-export const test = {"BETTER_AUTH_SECRET":"4ksLDrXEbWqoYSgiKifaR0tlNa9Jk9IDs9WN4vo6Yfg=","BETTER_AUTH_GITHUB_CLIENT_ID":"","BETTER_AUTH_GITHUB_CLIENT_SECRET":"","DATABASE_URL":"file:./db.sqlite"};
