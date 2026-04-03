@@ -1,0 +1,219 @@
+/*
+ * Altimi globals.css for shadcn/ui + Tailwind v4
+ *
+ * Drop-in replacement for the default shadcn globals.css.
+ * Maps all Altimi design tokens to shadcn's variable system.
+ *
+ * Prerequisites:
+ *   - Configure fonts in layout.tsx with next/font/local (see layout.example.tsx)
+ *   - Fonts set CSS variables: --font-matter, --font-dm-mono
+ */
+
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-matter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-dm-mono), ui-monospace, monospace;
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Altimi extended palette — use as bg-altimi-dark, text-altimi-muted, etc. */
+  --color-altimi-dark: #0a1926;
+  --color-altimi-text: #0a1926;
+  --color-altimi-muted: #333333;
+  --color-altimi-light-gray: #f5f5f5;
+  --color-altimi-blue: #419AF0;
+  --color-altimi-magenta: #D34489;
+  --color-altimi-white-10: rgba(255, 255, 255, 0.1);
+  --color-altimi-white-30: rgba(255, 255, 255, 0.3);
+  --color-altimi-white-40: rgba(255, 255, 255, 0.4);
+}
+
+/* ─── Light Mode (default) ─── */
+:root {
+  --background: #ffffff;
+  --foreground: #0a1926;
+  --card: #ffffff;
+  --card-foreground: #0a1926;
+  --popover: #ffffff;
+  --popover-foreground: #0a1926;
+  --primary: #0a1926;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f5;
+  --secondary-foreground: #0a1926;
+  --muted: #f5f5f5;
+  --muted-foreground: #333333;
+  --accent: #f5f5f5;
+  --accent-foreground: #0a1926;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: rgba(10, 25, 38, 0.1);
+  --input: rgba(10, 25, 38, 0.15);
+  --ring: rgba(10, 25, 38, 0.3);
+  --chart-1: #0a1926;
+  --chart-2: #419AF0;
+  --chart-3: #D34489;
+  --chart-4: #333333;
+  --chart-5: #f5f5f5;
+  --radius: 0.625rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0a1926;
+  --sidebar-primary: #0a1926;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f5f5f5;
+  --sidebar-accent-foreground: #0a1926;
+  --sidebar-border: rgba(10, 25, 38, 0.1);
+  --sidebar-ring: rgba(10, 25, 38, 0.3);
+}
+
+/* ─── Dark Mode (for sections with .dark wrapper) ─── */
+.dark {
+  --background: #0a1926;
+  --foreground: #ffffff;
+  --card: rgba(255, 255, 255, 0.05);
+  --card-foreground: #ffffff;
+  --popover: #0a1926;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #0a1926;
+  --secondary: rgba(255, 255, 255, 0.1);
+  --secondary-foreground: #ffffff;
+  --muted: rgba(255, 255, 255, 0.1);
+  --muted-foreground: rgba(255, 255, 255, 0.5);
+  --accent: rgba(255, 255, 255, 0.1);
+  --accent-foreground: #ffffff;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: rgba(255, 255, 255, 0.3);
+  --sidebar: #0a1926;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #0a1926;
+  --sidebar-accent: rgba(255, 255, 255, 0.1);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: rgba(255, 255, 255, 0.3);
+}
+
+/* ─── Base Styles ─── */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-size: 17.5px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html {
+    @apply font-sans;
+    font-size: 17.5px;
+  }
+}
+
+/* ─── Altimi Patterns ─── */
+
+/* Noise grain overlay — apply to dark sections */
+.bg-grain {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/bg-noise.png');
+  background-size: 250px 250px;
+  background-repeat: repeat;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Dashed separator */
+.dashed-separator {
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  height: 2px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(10, 25, 38, 0.15) 0px,
+    rgba(10, 25, 38, 0.15) 5px,
+    transparent 5px,
+    transparent 12px
+  );
+}
+
+.dark .dashed-separator,
+.dashed-separator-dark {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 0px,
+    rgba(255, 255, 255, 0.4) 5px,
+    transparent 5px,
+    transparent 12px
+  );
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(calc(-100% / 3)); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+/* Typewriter cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 0.7s step-end infinite;
+}
+
+/* Section transition — rounded top that slides over previous section */
+.section-slide {
+  border-radius: 24px 24px 0 0;
+  position: relative;
+  z-index: 1;
+}

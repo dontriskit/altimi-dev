@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/intake/route": "/api/intake",
+  "/api/leads/route": "/api/leads",
+  "/api/trpc/[trpc]/route": "/api/trpc/[trpc]",
+  "/api/auth/[...all]/route": "/api/auth/[...all]",
+  "/intake/page": "/intake",
+  "/page": "/",
+  "/resources/soc-reports/page": "/resources/soc-reports",
+  "/resources/page": "/resources",
+  "/resources/soc-reports/full-report/page": "/resources/soc-reports/full-report",
+  "/privacy/page": "/privacy"
+}

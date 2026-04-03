@@ -1,0 +1,7 @@
+import { createTRPCRouter, publicProcedure } from "@/server/api/trpc";
+
+export const postRouter = createTRPCRouter({
+  health: publicProcedure.query(() => {
+    return { status: "ok", timestamp: new Date().toISOString() };
+  }),
+});

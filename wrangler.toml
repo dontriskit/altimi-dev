@@ -1,0 +1,20 @@
+name = "altimi-dev-com"
+account_id = "44c2cfe8d65d85cfe6d7b3d02d4cc394"
+main = ".open-next/worker.js"
+compatibility_date = "2026-02-23"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+routes = [
+  { pattern = "altimi-dev.com/*", zone_id = "f7608cf28a71191b76c3b1ab301733ca" },
+  { pattern = "www.altimi-dev.com/*", zone_id = "f7608cf28a71191b76c3b1ab301733ca" },
+]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "altimi-dev-com"
+database_id = "5f79b93e-1e95-4ad7-84f7-18400a2055df"
