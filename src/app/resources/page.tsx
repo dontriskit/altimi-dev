@@ -80,7 +80,7 @@ export default async function ResourcesPage() {
                     <div className={isEven ? "md:order-1" : ""}>
                       <div className="overflow-hidden rounded-xl shadow-lg group-hover:shadow-xl transition-shadow">
                         <Image
-                          src={`/resources/${a.slug}/images/hero.jpg`}
+                          src={`/cdn-cgi/image/width=800,quality=80,format=auto/resources/${a.slug}/images/hero.jpg`}
                           alt={a.title}
                           width={700}
                           height={400}
